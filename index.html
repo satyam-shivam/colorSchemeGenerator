@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>Color Scheme Generator</title>
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex">
+            <input type="color" name="input-color" id="input-color">
+            <div class="scheme-container">
+                <div class="color-scheme d-flex">
+                    <span class="selected-scheme" id="selected-scheme">Monochrome</span>
+                    <i class="fa-solid fa-angle-down" id="dropdown-arrow"></i>
+                </div>
+                <div class="dropdown" id="dropdown">
+                    <ul>
+                        <li class="d-flex"> 
+                            <span data-shade = "Monochrome">Monochrome</span> 
+                            <i class="fa-solid fa-check" data-shade = "Monochrome"></i>
+                        </li>
+                        <li class="d-flex">
+                            <span data-shade = "Monochrome-dark">Monochrome-dark</span>  
+                            <i class="fa-solid fa-check" data-shade = "Monochrome-dark"></i>
+                        </li>
+                        <li class="d-flex">
+                            <span data-shade = "Monochrome-light">Monochrome-light</span>  
+                            <i class="fa-solid fa-check" data-shade = "Monochrome-light"></i>
+                        </li>
+                        <li class="d-flex">
+                            <span data-shade = "Analogic">Analogic</span>  
+                            <i class="fa-solid fa-check" data-shade = "Analogic"></i>
+                        </li>
+                        <li class="d-flex">
+                            <span data-shade = "Complement">Complement</span>  
+                            <i class="fa-solid fa-check" data-shade = "Complement"></i>
+                        </li>
+                        <li class="d-flex">
+                            <span data-shade = "Analogic-complement">Analogic-complement</span>  
+                            <i class="fa-solid fa-check" data-shade = "Analogic-complement"></i>
+                        </li>
+                        <li class="d-flex">
+                            <span data-shade = "Triad">Triad</span>  
+                            <i class="fa-solid fa-check" data-shade = "Triad"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="get-color-scheme" id="get-color-scheme">Get color scheme</button>
+        </header>
+        <div class="color-container d-flex" id="color-container">
+            <div class="color-palette" data-color="#F55A5A">
+                <div class="color-box" style="background-color: #F55A5A;"></div>
+                <div class="color-value d-flex">#F55A5A</div>
+            </div>
+            <div class="color-palette" data-color="#2B283A">
+                <div class="color-box" style="background-color: #2B283A;"></div>
+                <div class="color-value d-flex">#2B283A</div>
+            </div>
+            <div class="color-palette" data-color="#FBF3AB">
+                <div class="color-box" style="background-color: #FBF3AB;"></div>
+                <div class="color-value d-flex">#FBF3AB</div>
+            </div>
+            <div class="color-palette" data-color="#AAD1B6">
+                <div class="color-box" style="background-color: #AAD1B6;"></div>
+                <div class="color-value d-flex">#AAD1B6</div>
+            </div>
+            <div class="color-palette" data-color="#A626D3">
+                <div class="color-box" style="background-color: #A626D3;"></div>
+                <div class="color-value d-flex">#A626D3</div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
